@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>浅谈js中的原型链 | Hexo</title>
+  <title>2018底前端面试知识点 | 犀利妹和花生仔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前提这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。 js中的对象js中将对象定义为一个无序属性的集合。 对象的创建方式 字面量方式创建 123var obj = &amp;#123;&amp;#125;obj.name = &apos;yan&apos;obj.age = 22  构造函数方式创建 123var obj = new Object()obj.name = &apos;yan&apos;obj.ag">
+  <meta name="description" content="###h5有什么新特性  语义化标签支持多媒体播放增加了用于绘画的canvas元素，svg元素离线存储，如localStorage等使外部应用可与浏览器内部数据直连，即在浏览器内部调起app并传递数据等连接特性，基于websoket实现服务器向用户推送数据性能与集成特性，web应用和网站可在多样化的环境中更快速地工作  ###跨域原理  因为同源策略，跨域是为了安全性，协议/地址/端口一致才属于同">
 <meta name="keywords" content="前端，面试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈js中的原型链">
-<meta property="og:url" content="http://yoursite.com/2019/03/12/记2018年底面试问题记录/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="前提这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。 js中的对象js中将对象定义为一个无序属性的集合。 对象的创建方式 字面量方式创建 123var obj = &amp;#123;&amp;#125;obj.name = &apos;yan&apos;obj.age = 22  构造函数方式创建 123var obj = new Object()obj.name = &apos;yan&apos;obj.ag">
+<meta property="og:title" content="2018底前端面试知识点">
+<meta property="og:url" content="http://yoursite.com/2019/03/12/2018底前端面试知识点/index.html">
+<meta property="og:site_name" content="犀利妹和花生仔">
+<meta property="og:description" content="###h5有什么新特性  语义化标签支持多媒体播放增加了用于绘画的canvas元素，svg元素离线存储，如localStorage等使外部应用可与浏览器内部数据直连，即在浏览器内部调起app并传递数据等连接特性，基于websoket实现服务器向用户推送数据性能与集成特性，web应用和网站可在多样化的环境中更快速地工作  ###跨域原理  因为同源策略，跨域是为了安全性，协议/地址/端口一致才属于同">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-12T08:34:28.111Z">
+<meta property="og:updated_time" content="2019-03-12T09:16:30.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈js中的原型链">
-<meta name="twitter:description" content="前提这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。 js中的对象js中将对象定义为一个无序属性的集合。 对象的创建方式 字面量方式创建 123var obj = &amp;#123;&amp;#125;obj.name = &apos;yan&apos;obj.age = 22  构造函数方式创建 123var obj = new Object()obj.name = &apos;yan&apos;obj.ag">
+<meta name="twitter:title" content="2018底前端面试知识点">
+<meta name="twitter:description" content="###h5有什么新特性  语义化标签支持多媒体播放增加了用于绘画的canvas元素，svg元素离线存储，如localStorage等使外部应用可与浏览器内部数据直连，即在浏览器内部调起app并传递数据等连接特性，基于websoket实现服务器向用户推送数据性能与集成特性，web应用和网站可在多样化的环境中更快速地工作  ###跨域原理  因为同源策略，跨域是为了安全性，协议/地址/端口一致才属于同">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="犀利妹和花生仔" type="application/atom+xml">
   
   
     <link rel="icon" href="/assets/webImg/timg.jpeg">
@@ -155,47 +155,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-记2018年底面试问题记录" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2018底前端面试知识点" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      浅谈js中的原型链
+      2018底前端面试知识点
     </h1>
   
 
         
-        <a href="/2019/03/12/记2018年底面试问题记录/" class="archive-article-date">
-  	<time datetime="2019-03-12T06:56:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
+        <a href="/2019/03/12/2018底前端面试知识点/" class="archive-article-date">
+  	<time datetime="2019-03-12T09:15:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。</p>
-<h2 id="js中的对象"><a href="#js中的对象" class="headerlink" title="js中的对象"></a>js中的对象</h2><p>js中将对象定义为一个无序属性的集合。</p>
-<h2 id="对象的创建方式"><a href="#对象的创建方式" class="headerlink" title="对象的创建方式"></a>对象的创建方式</h2><ol>
-<li><p>字面量方式创建</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;</span><br><span class="line">obj.name = <span class="string">'yan'</span></span><br><span class="line">obj.age = <span class="number">22</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>构造函数方式创建</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>()</span><br><span class="line">obj.name = <span class="string">'yan'</span></span><br><span class="line">obj.age = <span class="number">22</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+        <p>###h5有什么新特性</p>
+<blockquote>
+<p>语义化标签<br>支持多媒体播放<br>增加了用于绘画的canvas元素，svg元素<br>离线存储，如localStorage等<br>使外部应用可与浏览器内部数据直连，即在浏览器内部调起app并传递数据等<br>连接特性，基于websoket实现服务器向用户推送数据<br>性能与集成特性，web应用和网站可在多样化的环境中更快速地工作</p>
+</blockquote>
+<p>###跨域原理</p>
+<blockquote>
+<p>因为同源策略，跨域是为了安全性，协议/地址/端口一致才属于同源<br>cors实现，通过在服务器中修改返回信息的请求头<br>jsonp支持get方法，而cors支持多种方式</p>
+</blockquote>
+<p>###通过更改请求头实现跨域</p>
+<blockquote>
+<p>即cors实现跨域</p>
+</blockquote>
+<p>###浏览器呈现页面的过程经历过哪些步骤<br>1.输入url<br>2.浏览器检查缓存中有没有缓存好的js或css文件，有的话显示缓存的页面<br>3.域名解析，将域名解析为ip地址，又称DNS解析<br>4.tcp连接，三次握手<br>5.服务器收到请求，并返回一个响应头和响应体<br>6.浏览器收到服务器返回的响应头和响应体，进行客户端渲染，生成dom树，解析css样式，js交互</p>
 <a id="more"></a>
-<h2 id="对象的创建模式"><a href="#对象的创建模式" class="headerlink" title="对象的创建模式"></a>对象的创建模式</h2><ol>
-<li><p>工厂模式<br>将创建对象的语句封装到函数内，调用函数创建对象。  工厂模式可以实现快速地创建对象，但是无法判断创建的对象类型。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createObj</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>()</span><br><span class="line">  obj.name = name</span><br><span class="line">  obj.age = age</span><br><span class="line">  <span class="keyword">return</span> obj</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>构造函数模式<br>声明一个函数用来创建对象，一般默认构造函数的函数名首字母大写，创建对象时使用new操作符调用构造函数，调用构造函数创建出的对象也称为实例。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name</span><br><span class="line">  <span class="keyword">this</span>.age = age</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person(<span class="string">'yan'</span>, <span class="number">22</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="原型的概念"><a href="#原型的概念" class="headerlink" title="原型的概念"></a>原型的概念</h2><p>用构造函数创建的实例可以判断对象的类型，但是每一个实例都是一个独立的对象，即每个实例都有属于自己的内存空间。这时我们不禁考虑到，用同一个构造函数创建的实例存在着相同的属性或者函数，都占据一部分内存空间，我们能否把这部分相同的属性或函数放到一个共享的内存空间中，让所有实例访问呢？这个时候，原型的概念就出现了。<br>函数在被创建的时候会被赋予一个属性：prototype，这就是原型对象。原型对象可以理解为一个共享的空间，所有由构造函数创建的实例都可以访问这个空间。prototype中有个名为constructor的属性，这个属性指向原型对象所属函数的地址指针，即指向构造函数本身。实例可以通过自身的[[prototype]]属性访问原型对象，即构造函数的prototype：在大部分浏览器中实现为<em>proto</em>。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name</span><br><span class="line">  <span class="keyword">this</span>.age = age</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.say = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person1 = <span class="keyword">new</span> Person(<span class="string">'yan'</span>, <span class="number">22</span>)</span><br><span class="line"><span class="keyword">var</span> person2 = <span class="keyword">new</span> Person(<span class="string">'mo'</span>, <span class="number">25</span>)</span><br><span class="line"><span class="built_in">console</span>.log(person1) <span class="comment">// &#123;name:'yan', age:22&#125;</span></span><br><span class="line">person1.say()       <span class="comment">// hello</span></span><br><span class="line">person2.say()       <span class="comment">// hello</span></span><br><span class="line"><span class="built_in">console</span>.log(person._proto_ == Person.prototype) <span class="comment">// true</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="原型链的访问"><a href="#原型链的访问" class="headerlink" title="原型链的访问"></a>原型链的访问</h2>
+<p>###webpack的配置</p>
+<p>###对原型和原型链的理解</p>
+<blockquote>
+<p>拓展：prototype和<em>proto</em>的区别<br>prototype是函数才有的属性，而<em>proto</em>是每个对象都具有的属性，只是不同浏览器的实现方式不同<br><em>proto</em>指向对象构造器的原型（prototype），又因为js中一切皆对象，故形成了一条原型链</p>
+</blockquote>
+<p>###MVC和MVVM的区别</p>
+<p>###vue是如何实现双向数据绑定的</p>
+<blockquote>
+<p>数据劫持结合发布者-订阅者模式</p>
+</blockquote>
+<p>###vue如何做好项目优化</p>
+<p>###将token放在请求头和放在cookies里面的区别</p>
+<p>###原生js中call与apply的区别，以及使用场景的不同</p>
+<p>###如何做前端项目性能优化</p>
+<p>###原生js的事件冒泡与事件捕获机制</p>
+<p>###不同浏览器间js的常见兼容性问题</p>
+<p>###css的命名空间</p>
+<p>###js中的设计模式有哪些，还有大体的概念</p>
+<p>###vue-router有哪些钩子函数<br>1.全局守卫    router.beforeEach((to,from,next)=&gt;{})<br>2.全局解析守卫   router.beforeResolve<br>3.全局后置钩子   router.afterEach((to,from)=&gt;{})<br>4.路由独享守卫   在每个路由上单独配置beforeEnter<br>5.组件内的守卫</p>
+<blockquote>
+<p>beforeRouteEnter<br>beforeRouteUpdate<br>beforeRouteLeave</p>
+</blockquote>
+<p>###vue-router路由实现路由的懒加载</p>
+
       
 
       
@@ -236,17 +253,6 @@
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -296,7 +302,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/12/记2018年底面试问题记录/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/12/2018底前端面试知识点/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -311,8 +317,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2019/03/12/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/03/12/浅谈js中的原型链/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">浅谈js中的原型链</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -339,7 +345,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前提"><span class="toc-number">1.</span> <span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#js中的对象"><span class="toc-number">2.</span> <span class="toc-text">js中的对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象的创建方式"><span class="toc-number">3.</span> <span class="toc-text">对象的创建方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象的创建模式"><span class="toc-number">4.</span> <span class="toc-text">对象的创建模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原型的概念"><span class="toc-number">5.</span> <span class="toc-text">原型的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原型链的访问"><span class="toc-number">6.</span> <span class="toc-text">原型链的访问</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
@@ -500,41 +506,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-friends" q-show="friends">
   		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
     	</section>
     
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">君子藏器于身，&lt;br&gt;待机而动&lt;br&gt;&lt;br&gt;在这里记录一下我工作学习中的体会，与大家共勉</div>
   	  	
     	</section>
     
