@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="犀利妹和花生仔">
 <meta property="og:description" content="前提这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。 js中的对象js中将对象定义为一个无序属性的集合。 对象的创建方式 字面量方式创建 123var obj = &amp;#123;&amp;#125;obj.name = &apos;yan&apos;obj.age = 22  构造函数方式创建 123var obj = new Object()obj.name = &apos;yan&apos;obj.ag">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-12T09:38:26.556Z">
+<meta property="og:updated_time" content="2019-03-12T12:21:01.923Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈js中的原型链">
 <meta name="twitter:description" content="前提这篇文章主要给大家介绍一下js中的原型知识，在学习这个知识点之前，我们还需要做一些铺垫。 js中的对象js中将对象定义为一个无序属性的集合。 对象的创建方式 字面量方式创建 123var obj = &amp;#123;&amp;#125;obj.name = &apos;yan&apos;obj.age = 22  构造函数方式创建 123var obj = new Object()obj.name = &apos;yan&apos;obj.ag">
@@ -54,6 +54,8 @@
 		  <h1 class="header-author"><a href="/">双猫在手</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">就跟花生仔一样需要时间熟悉彼此</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -71,8 +73,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
             
     			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
@@ -85,8 +85,6 @@
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
@@ -112,6 +110,8 @@
 			  <h1 class="header-author js-header-author">双猫在手</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>就跟花生仔一样需要时间熟悉彼此<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -126,8 +126,6 @@
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
@@ -236,17 +234,6 @@
 	</div>
 
       
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
       
 
@@ -341,19 +328,6 @@
         </div>
         
         
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前提"><span class="toc-number">1.</span> <span class="toc-text">前提</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#js中的对象"><span class="toc-number">2.</span> <span class="toc-text">js中的对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象的创建方式"><span class="toc-number">3.</span> <span class="toc-text">对象的创建方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对象的创建模式"><span class="toc-number">4.</span> <span class="toc-text">对象的创建模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原型的概念"><span class="toc-number">5.</span> <span class="toc-text">原型的概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#原型链的访问"><span class="toc-number">6.</span> <span class="toc-text">原型链的访问</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
     </div>
 </aside>
 
@@ -398,7 +372,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: false
+		showTags: true
 	}
 </script>
 
@@ -418,8 +392,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
       
       
@@ -431,15 +403,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -461,6 +431,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">面试</a>
               </li>
             
             <div class="clearfix"></div>
@@ -506,10 +480,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-    	</section>
     
 
     
