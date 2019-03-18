@@ -154,6 +154,103 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-npm常用命令，nrm使用方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/03/18/npm常用命令，nrm使用方法/">npm常用命令，nrm使用方法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/03/18/npm常用命令，nrm使用方法/" class="archive-article-date">
+  	<time datetime="2019-03-18T07:23:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="npm常用命令整理"><a href="#npm常用命令整理" class="headerlink" title="npm常用命令整理"></a>npm常用命令整理</h2><h3 id="初始化一个package-json文件"><a href="#初始化一个package-json文件" class="headerlink" title="初始化一个package.json文件"></a>初始化一个package.json文件</h3><p><code>npm init</code></p>
+<h3 id="安装模块依赖"><a href="#安装模块依赖" class="headerlink" title="安装模块依赖"></a>安装模块依赖</h3><p><code>npm install</code></p>
+<h3 id="安装本地模块"><a href="#安装本地模块" class="headerlink" title="安装本地模块"></a>安装本地模块</h3><p><code>npm install modulename --save</code></p>
+<h3 id="安装全局模块"><a href="#安装全局模块" class="headerlink" title="安装全局模块"></a>安装全局模块</h3><p><code>npm install modulename -g</code></p>
+<h3 id="卸载模块"><a href="#卸载模块" class="headerlink" title="卸载模块"></a>卸载模块</h3><p><code>npm uninstall modulename</code></p>
+<h3 id="查看npm线上是否存在该模块"><a href="#查看npm线上是否存在该模块" class="headerlink" title="查看npm线上是否存在该模块"></a>查看npm线上是否存在该模块</h3><p><code>npm search modulename</code></p>
+<h3 id="查看安装的模块"><a href="#查看安装的模块" class="headerlink" title="查看安装的模块"></a>查看安装的模块</h3><p><code>npm ls</code></p>
+<h3 id="查看全局安装的模块"><a href="#查看全局安装的模块" class="headerlink" title="查看全局安装的模块"></a>查看全局安装的模块</h3><p><code>npm ls -g</code></p>
+<h3 id="查看当前目录模块安装的路径"><a href="#查看当前目录模块安装的路径" class="headerlink" title="查看当前目录模块安装的路径"></a>查看当前目录模块安装的路径</h3><p><code>npm root</code></p>
+<h3 id="查看全局目录模块安装的路径"><a href="#查看全局目录模块安装的路径" class="headerlink" title="查看全局目录模块安装的路径"></a>查看全局目录模块安装的路径</h3><p><code>npm root -g</code></p>
+<h3 id="清除npm本地缓存"><a href="#清除npm本地缓存" class="headerlink" title="清除npm本地缓存"></a>清除npm本地缓存</h3><p><code>npm cache clean</code></p>
+<h3 id="npm用户登陆"><a href="#npm用户登陆" class="headerlink" title="npm用户登陆"></a>npm用户登陆</h3><p><code>npm adduser</code></p>
+<h3 id="发布npm模块"><a href="#发布npm模块" class="headerlink" title="发布npm模块"></a>发布npm模块</h3><p><code>npm publish</code></p>
+<h2 id="nrm——npm镜像源管理工具"><a href="#nrm——npm镜像源管理工具" class="headerlink" title="nrm——npm镜像源管理工具"></a>nrm——npm镜像源管理工具</h2><h3 id="全局安装"><a href="#全局安装" class="headerlink" title="全局安装"></a>全局安装</h3><p><code>npm install nrm -g</code></p>
+<h3 id="nrm有默认配置-使用nrm-ls进行查看-带-号的为当前使用配置"><a href="#nrm有默认配置-使用nrm-ls进行查看-带-号的为当前使用配置" class="headerlink" title="nrm有默认配置,使用nrm ls进行查看,带*号的为当前使用配置"></a>nrm有默认配置,使用<code>nrm ls</code>进行查看,带*号的为当前使用配置</h3><p><code>nrm ls</code><br><img src="../assets/blog/nrm_ls.png" alt="avatar"></p>
+<h3 id="直接查看当前使用的镜像源"><a href="#直接查看当前使用的镜像源" class="headerlink" title="直接查看当前使用的镜像源"></a>直接查看当前使用的镜像源</h3><p><code>nrm current</code></p>
+<h3 id="切换镜像源"><a href="#切换镜像源" class="headerlink" title="切换镜像源"></a>切换镜像源</h3><p><code>nrm use 别名</code></p>
+<h3 id="添加镜像源"><a href="#添加镜像源" class="headerlink" title="添加镜像源"></a>添加镜像源</h3><p><code>nrm add 别名 镜像地址</code></p>
+<h3 id="测试镜像速度"><a href="#测试镜像速度" class="headerlink" title="测试镜像速度"></a>测试镜像速度</h3><p><code>nrm test 别名</code></p>
+<h3 id="删除镜像源"><a href="#删除镜像源" class="headerlink" title="删除镜像源"></a>删除镜像源</h3><p><code>nrm del 别名</code></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/18/npm常用命令，nrm使用方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-记使用hexo搭建个人静态博客网站的过程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -570,6 +667,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">npm</a>
               </li>
              
               <li class="article-tag-list-item">
